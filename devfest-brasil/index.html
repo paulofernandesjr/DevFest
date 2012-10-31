@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="pt-BR"> 
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <title>DevFest Brasil</title>
+        <link rel="stylesheet" href="css/style.css" media="all" />
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+        <script src="js/countdown.js"></script>
+        <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+        <script src="js/script.js"></script>
+        <script type="text/javascript">
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-36017802-1']);
+            _gaq.push(['_trackPageview']);
+
+            (function() {
+                var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+            })();
+
+        </script>
+    </head>
+    <body>
+        <div id="container">
+            <header>
+                <h1 class="logo">
+                    <a href="/" title="DevFest Brasil">
+                        <embed src="images/logo.svg" type="image/svg+xml" />
+                        <!-- <img src="images/logo.png" alt="DevFest Brasil" />-->
+                    </a>
+                </h1>
+                <div class="inscreva-se">
+                    <a href="http://eventick.com.br/devfest-brasil" title="Inscreva-se">
+                        <span class="rs">R$</span>
+                        <span class="valor">44</span>
+                    </a>
+                </div>
+            </header>
+            <section id="content">
+                <nav id="menu">
+                    <ul>
+                        <li><a href="http://bit.ly/c4p-devfest" title="Submeta sua Sessão C4P">Submeta sua Sessão <abbr title="Call4Papers">C4P</abbr></a></li>
+                        <li><a href="http://eventick.com.br/devfest-brasil" title="">Inscreva-se</a></li>
+                        <li><a href="#sobre" title="Sobre o DevFest">Sobre o DevFest</a></li>
+                        <li><a href="#como-chegar" title="Como Chegar">Como Chegar</a></li>
+                        <li><a href="#agenda" title="Agenda">Agenda</a></li>
+                        <li><a href="#patrocinadores" title="Patrocinadores">Patrocinadores</a></li>
+                        <li><a href="#contato" title="Contato">Contato</a></li>
+                    </ul> 
+                </nav>
+                <div id="counter">
+                    <div class="data">30/11/2012 - a partir da 09:00h</div>
+                    <div id="faltam">
+                        <span time="1354273200" class="kkcount-down"></span>
+                    </div>
+                    <p><a class="inscricao-counter" href="http://eventick.com.br/devfest-brasil">Inscreva-se já!</a></p>
+                </div>
+                <div id="sobre">
+                    <h2>Sobre o DevFest Brasil</h2>
+                    <p>Este ano n&atilde;o teremos o Google Developer Day e n&oacute;s da comunidade e do GDG (Google Developer Groups) resolvemos montar o DevFest Brasil.</p>
+                    <p>O DevFest est&aacute; acontecendo em diversos locais do mundo <a href="http://devfest.info/">http://devfest.info/</a></p>
+                    <p>Na edi&ccedil;&atilde;o do Brasil, contamos com os coordenadores de alguns GDGs: GDG-SP,&nbsp;GDG-BH e GDG-GO.</p>
+                    <p>Neste evento voc&ecirc; pode submeter palestras e codelab neste link aqui.</p>
+                    <p>Os temas s&atilde;o:</p>
+                    <p>- Android</p>
+                    <p>- Cloud</p>
+                    <p>- HTML 5/Chrome</p>
+                    <p>- Google APIs</p>
+                    <p>- Empreendedorismo</p>
+                    <p>N&atilde;o fique de fora deste evento, teremos palestrantes internacionais e nacionais do Google e a comunidade em peso, mostrando como fazer e relatando sua experi&ecirc;ncia.</p>
+                    <p>Caso tenha alguma duvida, clique no bot&atilde;o ao lado e pergunte ao organizador.</p>
+
+                </div>
+                <div id="como-chegar" class="mapa">
+                    <h2>Mapa</h2>
+                    <address>Avenida Paulista, 1.106 - 7° andar - São Paulo - SP</address>
+                    <img class="imagem" src="http://maps.google.com/maps/api/staticmap?center=-23.564339,%20-46.652770&zoom=15&size=320x320&maptype=roadmap&markers=color:redzlabel:S%7C40.702147,-74.015794&markers=color:green%7Clabel:G%7C40.711614,-74.012318&markers=color:red%7Clabel:A%7C-23.564339,%20-46.652770&sensor=false" alt="Google Maps" />
+                    <div id="mapa"></div>
+                </div>
+                <div id="agenda">
+                    <h2>Agenda</h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Horário/Sala</th>
+                                <th>Android</th>
+                                <th>APis</th>
+                                <th>Chrome/HTML5</th>
+                                <th>CLOUD</th>
+                                <th>Empreendedorismo</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>09:00h</td>
+                                <td class="center" colspan="5">Credenciamento</td>
+                            </tr>
+                            <tr>
+                                <td>10:00h</td>
+                                <td class="center" colspan="5">Abertura</td>
+                            </tr>
+                            <tr>
+                                <td>10:15h</td>
+                                <td class="center">Palestra</td>
+                                <td class="center">Palestra</td>
+                                <td class="center">Palestra</td>
+                                <td class="center">Palestra</td>
+                                <td class="center">Palestra</td>
+                            </tr>
+                            <tr>
+                                <td>11:15h</td>
+                                <td class="center" colspan="5">Coffee-Break</td>
+                            </tr>
+                            <tr>
+                                <td>11:45h</td>
+                                <td class="center">Palestra</td>
+                                <td class="center">Palestra</td>
+                                <td class="center">Palestra</td>
+                                <td class="center">Palestra</td>
+                                <td class="center">Palestra</td>
+                            </tr>
+                            <tr>
+                                <td>12:45h</td>
+                                <td class="center">Palestra</td>
+                                <td class="center">Palestra</td>
+                                <td class="center">Palestra</td>
+                                <td class="center">Palestra</td>
+                                <td class="center">Palestra</td>
+                            </tr>
+                            <tr>
+                                <td>13:45h</td>
+                                <td class="center" colspan="5">Almoço</td>
+                            </tr>
+                            <tr>
+                                <td>15:00h</td>
+                                <td class="center">Palestra</td>
+                                <td class="center">Palestra</td>
+                                <td class="center">Palestra</td>
+                                <td class="center">Palestra</td>
+                                <td class="center">Palestra</td>
+                            </tr>
+                            <tr>
+                                <td>16:00h</td>
+                                <td class="center">Palestra</td>
+                                <td class="center">Palestra</td>
+                                <td class="center">Palestra</td>
+                                <td class="center">Palestra</td>
+                                <td class="center">Palestra</td>
+                            </tr>
+                            <tr>
+                                <td>17:00h</td>
+                                <td class="center" colspan="5">Coffee-Break</td>
+                            </tr>
+                            <tr>
+                                <td>17:30h</td>
+                                <td class="center">Palestra</td>
+                                <td class="center">Palestra</td>
+                                <td class="center">Palestra</td>
+                                <td class="center">Palestra</td>
+                                <td class="center">Palestra</td>
+                            </tr>
+                            <tr>
+                                <td>18:30h</td>
+                                <td class="center" colspan="5">Encerramento/Sorteios</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div id="patrocinadores">
+                    <h2>Patrocinadores</h2>
+                    <ul>
+                        <li class="patrocinador">Google</li>
+                    </ul>
+                </div>
+                <div id="contato">
+                    <h2>Contato</h2>
+                    <p>Para entrar em contato acesse <a href="http://eventick.com.br/devfest-brasil">aqui</a> e fale com o organizador</p>
+                    <ul>
+                        <li class="contato"><a href="https://plus.google.com/b/114285779399410164736/114285779399410164736/posts">Google +</a></li>
+                        <li class="contato"><a href="http://twitter.com/devfestbrasil">Twitter</a></li>
+                        <li class="contato"><a href="http://faceboo.com/DevFestBrasil">Facebook</a></li>
+                    </ul>
+                </div>
+            </section>
+            <footer>
+                <div class="logo">
+                    <a href="/" title="DevFest Brasil">
+                        <embed src="images/logo.svg" type="image/svg+xml" />
+                        <!-- <img src="images/logo.png" alt="DevFest Brasil" />-->
+                    </a>
+                    <img src="https://developers.google.com/appengine/images/appengine-silver-120x30.gif" alt="Powered by Google App Engine" />
+                </div>
+                <div class="organizacao">
+                    <p>Este evento esta sendo organizado por: </p>
+                    <ul>
+                        <li>Paulo Fernandes - GDG-SP</li>
+                        <li>Luis Leão - GDG-SP</li>
+                        <li>Robson Dantas - GDG-SP</li>
+                        <li>Jacob van den Berg  - GDG-BH</li>
+                        <li>Leonardo de Barros - GDG-BH</li>
+                        <li>Vinícius Braga - GDG-GO</li>
+                    </ul>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>
