@@ -18,6 +18,7 @@ time, mark, audio, video {
     font: inherit;
     vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
@@ -46,30 +47,66 @@ table {
 body { font-family: Tahoma, Arial; }
 a { text-decoration: none; color: #000; }
 a:hover { text-decoration: underline; }
-h2 { font-size: 25px; }
+h2 { 
+    font-size: 3em;
+    margin-bottom: 1em;
+}
+
+
+
 
 /**** header ****/
-header { height: 100px; background-color: #000; }
-.logo { margin: 15px; float: left; width: 390px; }
+header { 
+    height: 600px; 
+    clear: both; 
+    background: #FFF url(../images/fundo.jpg) center no-repeat; 
+    background-size: cover;
+    margin: 0 0 20px 0; 
+    position: relative;
+    overflow: hidden;
+}
+
+
+
+
+.logo { 
+    position: absolute;
+    top: 50px;
+    left: 50px;
+}
+
 .logo a { display: block; }
 .inscreva-se { 
-    background: #FFF url(../images/ribbon.png) top center no-repeat; 
+    background: url(../images/ribbon.png) top center no-repeat; 
     float: right;
     width: 130px;
     margin-right: 120px;
     height: 140px;
     position: relative;
+
 }
 .inscreva-se .rs { font-size: 20px; position: absolute; top: 10px; left: 10px; }
 .inscreva-se .valor { font-size: 85px; position: absolute; top: 15px; left: 20px;}
 
+
+
+
 /* conteudo */
-#content { min-height: 300px; clear: both; background: #FFF url(../images/fundo.jpg) top center no-repeat; margin: 10px 30px; }
+
+
+#content { 
+    min-height: 300px; 
+    clear: both; 
+    background: #FFF; 
+    margin: 10px 30px; 
+}
 
 /* links */
 #menu { 
+    position: absolute;
+    top: 180px;
+    left: 80px;
     width: 50%;
-    display: inline-block;
 }
 #menu li { 
     height: 25px;
@@ -77,15 +114,23 @@ header { height: 100px; background-color: #000; }
     font-size: 25px;
     padding: 10px 30px;
 }
+#menu li a {
+    color: #fff;
+    text-shadow: 0.1em 0.1em 0.2em #000;
+}
+#menu li a:hover {
+    text-decoration: none;
+}
 
 /* contador */
 #counter { 
-    float: right;
-    width: 40%;
-    height: 200px;
-    margin-right: 3%;
-    padding-top: 20px;
+    position: absolute;
+    right: 100px;
+    top: 250px;
+    width: 450px;
     text-align: center;
+    padding: 30px;
+    background-color: #ccc;
 }
 .data {
     font-size: 30px;
@@ -95,18 +140,32 @@ header { height: 100px; background-color: #000; }
 }
 #faltam { font-size: 60px; padding-top: 30px; }
 #counter p { padding-top: 40px; }
+
+
+
 .inscricao-counter { 
     padding: 10px; 
-    border: 1px solid #000; 
     background-color: #555; 
     color: #FFF;
     font-size: 40px;
+
+    -moz-box-shadow:    3px 3px 5px 0px #000;
+    -webkit-box-shadow: 3px 3px 5px 0px #000;
+    box-shadow:         3px 3px 5px 0px #000;
+
+
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+
 }
 
+.inscricao-counter:hover {
+    text-decoration: none;
+}
 
 /* sobre */
 #sobre { 
-    margin-top: 200px;
     width: 97%;
     display: inline-block;
     background-color: #FFF;
@@ -122,7 +181,11 @@ header { height: 100px; background-color: #000; }
 /*mapa*/
 #como-chegar { background-color: #FFF; width: 97%; min-height: 300px; margin: 0px auto; padding: 50px 25px 25px; }
 #como-chegar .imagem { display: none; }
-#mapa { width: 90%; height: 300px; margin: 0 auto; }
+#mapa { 
+    width: 400px;
+    height: 400px; 
+    margin: 0 auto; 
+}
 #como-chegar address { display: block; margin-bottom: 10px;}
 
 
@@ -135,14 +198,33 @@ th { font-weight: bold; }
 
 
 /* patrocinador */
-#patrocinadores { clear: both; background-color: #FFF; width: 96%; min-height: 300px; margin: 0px auto; padding: 50px 25px 25px; }
-.patrocinador { font-size: 30px; }
+#patrocinadores { 
+    clear: both;
+    background-color: #FFF;
+    width: 96%;
+    min-height: 300px;
+    margin: 0px auto;
+    padding: 50px 25px 25px;
+}
+/*
+.patrocinador {
+    font-size: 20px;
+}
+*/
 
 /* contato */
 #contato { clear: both; background-color: #FFF; width: 96%; min-height: 300px; margin: 0px auto; padding: 50px 25px 25px; }
 .contato { font-size: 30px; }
-footer { height: 200px; }
+footer {
+    padding: 30px 0;
+}
 
+
+
+#appengine {
+    display: block;
+    margin: 0 auto;
+}
 
 
 @media screen and (max-width:400px){
