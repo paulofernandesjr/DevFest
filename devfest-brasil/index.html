@@ -1,527 +1,634 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>DevFest Brasil - 30 de novembro de 2012</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <head>
+        <meta charset="utf-8">
+        <title>DevFest Brasil - 30 de novembro de 2012</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="">
 
 
-    <script type="text/javascript">
-        var _gaq = _gaq || [];
-        _gaq.push(['_setAccount', 'UA-36017802-1']);
-        _gaq.push(['_trackPageview']);
+        <script type="text/javascript">
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-36017802-1']);
+            _gaq.push(['_trackPageview']);
 
-        (function() {
-            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-        })();
+            (function() {
+                var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+            })();
 
-    </script>
-
-
-    <link href="assets/css/bootstrap.css" rel="stylesheet">
-    <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
-    <style>
-
-    /* GLOBAL STYLES
-    -------------------------------------------------- */
-    /* Padding below the footer and lighter body text */
-
-    body {
-      padding-bottom: 40px;
-      color: #5a5a5a;
-    }
+        </script>
 
 
+        <link href="assets/css/bootstrap.css" rel="stylesheet">
+        <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
+        <style>
 
-    /* CUSTOMIZE THE NAVBAR
-    -------------------------------------------------- */
+            /* GLOBAL STYLES
+            -------------------------------------------------- */
+            /* Padding below the footer and lighter body text */
 
-    /* Special class on .container surrounding .navbar, used for positioning it into place. */
-    .navbar-wrapper {
-      position: relative;
-      z-index: 10;
-      margin-top: 20px;
-      margin-bottom: -90px; /* Negative margin to pull up carousel. 90px is roughly margins and height of navbar. */
-    }
-
-    /* Remove border and change up box shadow for more contrast */
-    .navbar .navbar-inner {
-      border: 0;
-      -webkit-box-shadow: 0 2px 10px rgba(0,0,0,.25);
-         -moz-box-shadow: 0 2px 10px rgba(0,0,0,.25);
-              box-shadow: 0 2px 10px rgba(0,0,0,.25);
-    }
-
-    /* Downsize the brand/project name a bit */
-    .navbar .brand {
-      padding: 14px 20px 16px; /* Increase vertical padding to match navbar links */
-      font-size: 16px;
-      font-weight: bold;
-      text-shadow: 0 -1px 0 rgba(0,0,0,.5);
-    }
-
-    /* Navbar links: increase padding for taller navbar */
-    .navbar .nav > li > a {
-      padding: 15px 20px;
-    }
-
-    /* Offset the responsive button for proper vertical alignment */
-    .navbar .btn-navbar {
-      margin-top: 10px;
-    }
+            body {
+                padding-bottom: 40px;
+                color: #5a5a5a;
+            }
 
 
 
-    /* CUSTOMIZE THE NAVBAR
-    -------------------------------------------------- */
+            /* CUSTOMIZE THE NAVBAR
+            -------------------------------------------------- */
 
-    /* Carousel base class */
-    .carousel {
-      margin-bottom: 60px;
-    }
+            /* Special class on .container surrounding .navbar, used for positioning it into place. */
+            .navbar-wrapper {
+                position: relative;
+                z-index: 10;
+                margin-top: 20px;
+                margin-bottom: -90px; /* Negative margin to pull up carousel. 90px is roughly margins and height of navbar. */
+            }
 
-    .carousel .container {
-      position: absolute;
-      right: 0;
-      bottom: 0;
-      left: 0;
-    }
+            /* Remove border and change up box shadow for more contrast */
+            .navbar .navbar-inner {
+                border: 0;
+                -webkit-box-shadow: 0 2px 10px rgba(0,0,0,.25);
+                -moz-box-shadow: 0 2px 10px rgba(0,0,0,.25);
+                box-shadow: 0 2px 10px rgba(0,0,0,.25);
+            }
 
-    .carousel-control {
-      background-color: transparent;
-      border: 0;
-      font-size: 120px;
-      margin-top: 0;
-      text-shadow: 0 1px 1px rgba(0,0,0,.4);
-    }
+            /* Downsize the brand/project name a bit */
+            .navbar .brand {
+                padding: 14px 20px 16px; /* Increase vertical padding to match navbar links */
+                font-size: 16px;
+                font-weight: bold;
+                text-shadow: 0 -1px 0 rgba(0,0,0,.5);
+            }
 
-    .carousel .item {
-      height: 500px;
-    }
-    .carousel img {
-      min-width: 100%;
-      height: 500px;
-    }
+            /* Navbar links: increase padding for taller navbar */
+            .navbar .nav > li > a {
+                padding: 15px 20px;
+            }
 
-    .carousel-caption {
-      background-color: transparent;
-      position: static;
-      max-width: 550px;
-      padding: 0 20px;
-      margin-bottom: 100px;
-    }
-    .carousel-caption h1,
-    .carousel-caption .lead {
-      margin: 0;
-      line-height: 1.25;
-      color: #fff;
-      text-shadow: 0 1px 1px rgba(0,0,0,.4);
-    }
-    .carousel-caption .btn {
-      margin-top: 10px;
-    }
+            /* Offset the responsive button for proper vertical alignment */
+            .navbar .btn-navbar {
+                margin-top: 10px;
+            }
 
 
 
-    /* MARKETING CONTENT
-    -------------------------------------------------- */
+            /* CUSTOMIZE THE NAVBAR
+            -------------------------------------------------- */
 
-    /* Center align the text within the three columns below the carousel */
-    .marketing .span4  {
-      text-align: center;
-    }
-    .marketing h2 {
-      font-weight: normal;
-    }
-    .marketing .span4 p {
-      margin-left: 10px;
-      margin-right: 10px;
-    }
+            /* Carousel base class */
+            .carousel {
+                margin-bottom: 60px;
+            }
 
+            .carousel .container {
+                position: absolute;
+                right: 0;
+                bottom: 0;
+                left: 0;
+            }
 
-    /* Featurettes
-    ------------------------- */
+            .carousel-control {
+                background-color: transparent;
+                border: 0;
+                font-size: 120px;
+                margin-top: 0;
+                text-shadow: 0 1px 1px rgba(0,0,0,.4);
+            }
 
-    .featurette-divider {
-      margin: 60px 0; /* Space out the Bootstrap <hr> more */
-    }
-    .featurette {
-      padding-top: 60px; /* Vertically center images part 1: add padding above and below text. */
-      overflow: hidden; /* Vertically center images part 2: clear their floats. */
-    }
-    .featurette-image {
-      margin-top: -60px; /* Vertically center images part 3: negative margin up the image the same amount of the padding to center it. */
-    }
+            .carousel .item {
+                height: 500px;
+            }
+            .carousel img {
+                min-width: 100%;
+                height: 500px;
+            }
 
-    /* Give some space on the sides of the floated elements so text doesn't run right into it. */
-    .featurette-image.pull-left {
-      margin-right: 40px;
-    }
-    .featurette-image.pull-right {
-      margin-left: 40px;
-    }
-
-    /* Thin out the marketing headings */
-    .featurette-heading {
-      font-size: 50px;
-      font-weight: 300;
-      line-height: 1;
-      letter-spacing: -1px;
-    }
-
-
-
-    /* RESPONSIVE CSS
-    -------------------------------------------------- */
-
-    @media (max-width: 979px) {
-
-      .container.navbar-wrapper {
-        margin-bottom: 0;
-        width: auto;
-      }
-      .navbar-inner {
-        border-radius: 0;
-        margin: -20px 0;
-      }
-
-      .carousel .item {
-        height: 500px;
-      }
-      .carousel img {
-        width: auto;
-        height: 500px;
-      }
-
-      .featurette {
-        height: auto;
-        padding: 0;
-      }
-      .featurette-image.pull-left,
-      .featurette-image.pull-right {
-        display: block;
-        float: none;
-        max-width: 40%;
-        margin: 0 auto 20px;
-      }
-    }
+            .carousel-caption {
+                background-color: transparent;
+                position: static;
+                max-width: 550px;
+                padding: 0 20px;
+                margin-bottom: 100px;
+            }
+            .carousel-caption h1,
+            .carousel-caption .lead {
+                margin: 0;
+                line-height: 1.25;
+                color: #fff;
+                text-shadow: 0 1px 1px rgba(0,0,0,.4);
+            }
+            .carousel-caption .btn {
+                margin-top: 10px;
+            }
 
 
-    @media (max-width: 767px) {
 
-      .navbar-inner {
-        margin: -20px;
-      }
+            /* MARKETING CONTENT
+            -------------------------------------------------- */
 
-      .carousel {
-        margin-left: -20px;
-        margin-right: -20px;
-      }
-      .carousel .container {
+            /* Center align the text within the three columns below the carousel */
+            .marketing .span4  {
+                text-align: center;
+            }
+            .marketing h2 {
+                font-weight: normal;
+            }
+            .marketing .span4 p {
+                margin-left: 10px;
+                margin-right: 10px;
+            }
 
-      }
-      .carousel .item {
-        height: 300px;
-      }
-      .carousel img {
-        height: 300px;
-      }
-      .carousel-caption {
-        width: 65%;
-        padding: 0 70px;
-        margin-bottom: 40px;
-      }
-      .carousel-caption h1 {
-        font-size: 30px;
-      }
-      .carousel-caption .lead,
-      .carousel-caption .btn {
-        font-size: 18px;
-      }
 
-      .marketing .span4 + .span4 {
-        margin-top: 40px;
-      }
+            /* Featurettes
+            ------------------------- */
 
-      .featurette-heading {
-        font-size: 30px;
-      }
-      .featurette .lead {
-        font-size: 18px;
-        line-height: 1.5;
-      }
-        header {
-            height: 200px;
-        }
-        .logo {
-            left: 0;
-            position: absolute;
-            top: -40px;
-            width: 100%;
-        }
-    }
+            .featurette-divider {
+                margin: 60px 0; /* Space out the Bootstrap <hr> more */
+            }
+            .featurette {
+                padding-top: 60px; /* Vertically center images part 1: add padding above and below text. */
+                overflow: hidden; /* Vertically center images part 2: clear their floats. */
+            }
+            .featurette-image {
+                margin-top: -60px; /* Vertically center images part 3: negative margin up the image the same amount of the padding to center it. */
+            }
 
-    header {
-      position: relative;
-      z-index: 10;
-      margin-top: 50px;
-      margin-bottom: -150px; /* Negative margin to pull up carousel. 90px is roughly margins and height of navbar. */
+            /* Give some space on the sides of the floated elements so text doesn't run right into it. */
+            .featurette-image.pull-left {
+                margin-right: 40px;
+            }
+            .featurette-image.pull-right {
+                margin-left: 40px;
+            }
 
-    }
-    #mapa {
-      height: 400px;
-    }
+            /* Thin out the marketing headings */
+            .featurette-heading {
+                font-size: 50px;
+                font-weight: 300;
+                line-height: 1;
+                letter-spacing: -1px;
+            }
 
-    @media (max-width:400px){
-        header {
-            height: 200px;
-        }
-        .logo {
-            left: 0;
-            position: absolute;
-            top: -40px;
-            width: 100%;
-        }
-        .carousel .item {
-            height: 400px;
-          }
-          .carousel img {
-            height: 400px;
-          }
-        
-    }
-    
-    </style>
 
-    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
-    <!--[if lt IE 9]>
-      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
 
-    <!-- Fav and touch icons -->
-    <link rel="shortcut icon" href="assets/ico/favicon.ico">
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
-  </head>
+            /* RESPONSIVE CSS
+            -------------------------------------------------- */
 
-  <body>
+            @media (max-width: 979px) {
 
-    <div class="container">
-      <header>
-        <embed src="assets/img/logo.svg" type="image/svg+xml" class="logo" />
-      </header>
-    </div>
+                .container.navbar-wrapper {
+                    margin-bottom: 0;
+                    width: auto;
+                }
+                .navbar-inner {
+                    border-radius: 0;
+                    margin: -20px 0;
+                }
 
-    <!-- Carousel
-    ================================================== -->
-    <div id="myCarousel" class="carousel slide">
-      <div class="carousel-inner">
-        <div class="item active">
-          <img src="assets/img/header.jpg" alt="">
-          <div class="container">
-            <div class="carousel-caption">
-              <h1>Venha para o DevFest Brasil!</h1>
-              <p class="lead">Participe e contribua com um evento criado pela comunidade local de desenvolvedores Google.</p>
-              <p>&nbsp;</p>
-              <p class=""><span class="lead">30 de novembro de 2012</span>, a partir das 09h. <br/>FIAP (Paulista, 1106, 7º andar - São Paulo/SP)</p>
-              <p>&nbsp;</p>
-              <a class="btn btn-large btn-primary" href="http://eventick.com.br/devfest-brasil" target="_blank">Faça sua inscrição</a>&nbsp;
+                .carousel .item {
+                    height: 500px;
+                }
+                .carousel img {
+                    width: auto;
+                    height: 500px;
+                }
+
+                .featurette {
+                    height: auto;
+                    padding: 0;
+                }
+                .featurette-image.pull-left,
+                .featurette-image.pull-right {
+                    display: block;
+                    float: none;
+                    max-width: 40%;
+                    margin: 0 auto 20px;
+                }
+            }
+
+
+            @media (max-width: 767px) {
+
+                .navbar-inner {
+                    margin: -20px;
+                }
+
+                .carousel {
+                    margin-left: -20px;
+                    margin-right: -20px;
+                }
+                .carousel .container {
+
+                }
+                .carousel .item {
+                    height: 300px;
+                }
+                .carousel img {
+                    height: 300px;
+                }
+                .carousel-caption {
+                    width: 65%;
+                    padding: 0 70px;
+                    margin-bottom: 40px;
+                }
+                .carousel-caption h1 {
+                    font-size: 30px;
+                }
+                .carousel-caption .lead,
+                .carousel-caption .btn {
+                    font-size: 18px;
+                }
+
+                .marketing .span4 + .span4 {
+                    margin-top: 40px;
+                }
+
+                .featurette-heading {
+                    font-size: 30px;
+                }
+                .featurette .lead {
+                    font-size: 18px;
+                    line-height: 1.5;
+                }
+                header {
+                    height: 200px;
+                }
+                .logo {
+                    left: 0;
+                    position: absolute;
+                    top: -40px;
+                    width: 100%;
+                }
+            }
+
+            header {
+                position: relative;
+                z-index: 10;
+                margin-top: 50px;
+                margin-bottom: -150px; /* Negative margin to pull up carousel. 90px is roughly margins and height of navbar. */
+
+            }
+            #mapa {
+                height: 400px;
+            }
+            table td.center, table thead th { text-align: center; }
+            @media (max-width:400px){
+                header {
+                    height: 200px;
+                }
+                .logo {
+                    left: 0;
+                    position: absolute;
+                    top: -40px;
+                    width: 100%;
+                }
+                .carousel .item {
+                    height: 400px;
+                }
+                .carousel img {
+                    height: 400px;
+                }
+                #mapa {
+                    width: 90%;
+                }
+            }
+
+        </style>
+
+        <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+        <!--[if lt IE 9]>
+          <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+
+        <!-- Fav and touch icons -->
+        <link rel="shortcut icon" href="assets/ico/favicon.ico">
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+    </head>
+
+    <body>
+
+        <div class="container">
+            <header>
+                <embed src="assets/img/logo.svg" type="image/svg+xml" class="logo" />
+            </header>
+        </div>
+
+        <!-- Carousel
+        ================================================== -->
+        <div id="myCarousel" class="carousel slide">
+            <div class="carousel-inner">
+                <div class="item active">
+                    <img src="assets/img/header.jpg" alt="">
+                    <div class="container">
+                        <div class="carousel-caption">
+                            <h1>Venha para o DevFest Brasil!</h1>
+                            <p class="lead">Participe e contribua com um evento criado pela comunidade local de desenvolvedores Google.</p>
+                            <p>&nbsp;</p>
+                            <p class=""><span class="lead">30 de novembro de 2012</span>, a partir das 09h. <br/>FIAP (Paulista, 1106, 7º andar - São Paulo/SP)</p>
+                            <p>&nbsp;</p>
+                            <a class="btn btn-large btn-primary" href="http://eventick.com.br/devfest-brasil" target="_blank">Faça sua inscrição</a>&nbsp;
+                        </div>
+                    </div>
+                </div>
+
+
             </div>
-          </div>
-        </div>
 
-
-      </div>
-
-    </div><!-- /.carousel -->
+        </div><!-- /.carousel -->
 
 
 
-    <div class="container marketing">
+        <div class="container marketing">
 
 
-      <div class="featurette">
-        <h2 class="featurette-heading"><span class="muted">Um evento feito</span> pela comunidade!</h2>
-        <p class="lead">Você tem até <strong>15 de novembro</strong> para propor sua oficina, palestra ou codelab em um dos 5 temas abaixo.</p>
+            <div class="featurette">
+                <h2 class="featurette-heading"><span class="muted">Um evento feito</span> pela comunidade!</h2>
+                <p class="lead">Você tem até <strong>15 de novembro</strong> para propor sua oficina, palestra ou codelab em um dos 5 temas abaixo.</p>
 
-        <a class="btn btn-large btn-success" href="http://bit.ly/c4p-devfest" target="_blank">Proponha sua atividade</a>
-      </div>
-
-
-      <hr class="featurette-divider">
+                <a class="btn btn-large btn-success" href="http://bit.ly/c4p-devfest" target="_blank">Proponha sua atividade</a>
+            </div>
 
 
-      <div class="row">
-
-        <div class="span4">
-          <h2>Android</h2>
-          <p>Saiba sobre as novidades da plataforma e quais as boas práticas no desenvolvimento de interfaces.</p>
-        </div>
-
-        <div class="span4">
-          <h2>APIs</h2>
-          <p>Tudo que você queria saber sobre Youtube, Maps, Google+ e não tinha para quem perguntar.</p>
-        </div>
-
-        <div class="span4">
-          <h2>Chrome &amp; HTML5</h2>
-          <p>Interatividade, design e inovação utilizando o browser mais rápido do mercado</p>
-        </div>
+            <hr class="featurette-divider">
 
 
-      </div><!-- /.row -->
+            <div class="row">
 
-      <br/>
-      <div class="row" style="margin-top: 80px;">
-        <div class="span4 offset2">
-          <h2>Cloud</h2>
-          <p>Entenda como tirar proveito dos dados na nuvem e como fugir de tempestades :P</p>
-        </div>
+                <div class="span4">
+                    <h2>Android</h2>
+                    <p>Saiba sobre as novidades da plataforma e quais as boas práticas no desenvolvimento de interfaces.</p>
+                </div>
 
-        <div class="span4">
-          <h2>Startups</h2>
-          <p>Empreendedores, curiosos e muita gente envolvida no cenário de startups no Brasil estarão presentes.</p>
-        </div>
+                <div class="span4">
+                    <h2>APIs</h2>
+                    <p>Tudo que você queria saber sobre Youtube, Maps, Google+ e não tinha para quem perguntar.</p>
+                </div>
 
-      </div><!-- /.row -->
-
-
-<!--
-      <hr class="featurette-divider">
-
-      <div class="featurette">
-        <h2 class="featurette-heading"><span class="muted">Um espaço apropriado</span> para o empreendedorismo</h2>
-        <p class="lead">Empreendedores, curiosos e muita gente envolvida no cenário de startups no Brasil estarão presentes.<br/>Venha discutir e aprender mais sobre o assunto.</p>
-      </div>
--->
-
-      <hr class="featurette-divider">
+                <div class="span4">
+                    <h2>Chrome &amp; HTML5</h2>
+                    <p>Interatividade, design e inovação utilizando o browser mais rápido do mercado</p>
+                </div>
 
 
-      <div class="featurette">
-        <h2 class="featurette-heading"><span class="muted">Confira nossa</span> programação</h2>
+            </div><!-- /.row -->
 
-        <p class="lead">Em breve atualizaremos a nossa programação. <br/>Lembre-se que você pode propor alguma atividade através do <a href="http://bit.ly/c4p-devfest" target="_blank">call4papers</a>.</p>
-      </div>
+            <br/>
+            <div class="row" style="margin-top: 80px;">
+                <div class="span4 offset2">
+                    <h2>Cloud</h2>
+                    <p>Entenda como tirar proveito dos dados na nuvem e como fugir de tempestades :P</p>
+                </div>
 
+                <div class="span4">
+                    <h2>Startups</h2>
+                    <p>Empreendedores, curiosos e muita gente envolvida no cenário de startups no Brasil estarão presentes.</p>
+                </div>
 
-      <hr class="featurette-divider">
-
-
-      <div class="row">
-
-        <div class="span8">
-
-          <div class="featurette">
-            <h2 class="featurette-heading">Local e outras informações</h2>
-
-            <p class="lead">O evento ocorre na FIAP, na <a href="http://goo.gl/maps/FAe7c" target="_blank">Avenida Paulista, 1.106 - 7º andar - São Paulo/SP</a><br/>próximo do metrô Trianon-MASP.</p>
-            <p>&nbsp;</p>
-            <p class="lead">O espaço estará aberto a partir das 09h00. <br/>
-            Leve <strong>documento com foto</strong> (RG ou Habilitação) para entrada.</p>
+            </div><!-- /.row -->
 
 
-          </div>
-
-        </div>
-
-        <div class="span4" id="mapa">
-        </div>
-
-      </div>
-
-
-      <hr class="featurette-divider">
-
-
-      <div class="featurette">
-        <h2 class="featurette-heading">Não perca essa oportunidade!</h2>
-        <p class="lead">A inscrição custa apenas <strong>R$ 44,00</strong> (quarenta e quatro reais) e lhe garante credencial e camisa do evento.</p>
-
-        <a class="btn btn-large btn-primary" href="http://eventick.com.br/devfest-brasil" target="_blank">Faça sua inscrição</a>&nbsp;
-      </div>
-
-
-      <hr class="featurette-divider">
-
-
-
-      <!-- /END THE FEATURETTES -->
-
-
-
-      <!-- FOOTER -->
-      <footer>
-        <p class="pull-right"><a href="#">Voltar para o topo</a></p>
-
-
-        <div>
-            <p>Este evento esta sendo organizado pelos <a href="#" rel="tooltip" data-placement="top" data-original-title="Google Developer Groups">GDGs</a>: </p>
+            <!--
+                  <hr class="featurette-divider">
             
-            <ul>
-                <li><b>Belo Horizonte:</b> 
-                  <a href="https://plus.google.com/116085534841818923812" target="_blank">Jacob van den Berg</a> e 
-                  <a href="https://plus.google.com/101950228743755129233" target="_blank">Leonardo de Barros</a></li>
-                <li><b>Goiás:</b> 
-                  <a href="https://plus.google.com/114513456274604923484" target="_blank">Vinícius Braga</a>
-                </li>
-                <li><b>São Paulo:</b> 
-                  <a href="https://plus.google.com/115028528042654643072" target="_blank">Luís Leão</a>,
-                  <a href="https://plus.google.com/104268131142942797935" target="_blank">Paulo Fernandes</a> e
-                  <a href="https://plus.google.com/116353356965870702638" target="_blank">Robson Dantas</a>
-                </li>
-            </ul>
+                  <div class="featurette">
+                    <h2 class="featurette-heading"><span class="muted">Um espaço apropriado</span> para o empreendedorismo</h2>
+                    <p class="lead">Empreendedores, curiosos e muita gente envolvida no cenário de startups no Brasil estarão presentes.<br/>Venha discutir e aprender mais sobre o assunto.</p>
+                  </div>
+            -->
 
-            <p>Conheça outros DevFests que estão acontecendo pelo mundo em <a href="http://devfest.info" target="_blank">http://devfest.info</a>.</p>
-        </div>
-      </footer>
+            <hr class="featurette-divider">
 
-    </div><!-- /.container -->
+            
+            <div class="featurette">
+                <h2 class="featurette-heading"><span class="muted">Confira nossa</span> programação</h2>
+                <p class="lead">A programação poderá ser alterada sem prévio aviso. <br/>Lembre-se! Ainda dá tempo de propor alguma atividade através do <a href="http://bit.ly/c4p-devfest" target="_blank">call4papers</a> <span class="muted">(até 15/nov)</span></p>
+                <table class="table table-hover table-bordered">
+                    <thead>
+                        <tr>
+                            <th>Horário</th>
+                            <th>Android</th>
+                            <th>APis</th>
+                            <th>Chrome/HTML5</th>
+                            <th>CLOUD</th>
+                            <th>Statups</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="info">
+                            <td>09:00h</td>
+                            <td class="center" colspan="5">Credenciamento e Café da Manhã :) </td>
+                        </tr>
+                        <tr class="info">
+                            <td>10:00h</td>
+                            <td class="center" colspan="5">Abertura</td>
+                        </tr>
+                        <tr>
+                            <td>10:15h</td>
+                            <td class="center">A definir</td>
+                            <td class="center"><a href="#palestrante-2" title="Usando Project Library para customizar a aparencia da App de
+seu cliente aproveitando a regra de negócio já implementada!"><abbr title="Mini Palestra">MP</abbr> Como vender multiplas vezes a mesma App?</a></td>
+                            <td class="center">A definir</td>
+                            <td class="center">A definir</td>
+                            <td class="center">A definir</td>
+                        </tr>
+                        <tr>
+                            <td>11:05h</td>
+                            <td class="center">A definir</td>
+                            <td class="center">A definir</td>
+                            <td class="center">A definir</td>
+                            <td class="center">A definir</td>
+                            <td class="center"><a href="#palestrante-1">Monetização de Aplicativos com as soluções Google</a></td>
+                        </tr>
+                        <tr>
+                            <td>11:55h</td>
+                            <td class="center">A definir</td>
+                            <td class="center">A definir</td>
+                            <td class="center">A definir</td>
+                            <td class="center">A definir</td>
+                            <td class="center">A definir</td>
+                        </tr>
+                        <tr>
+                            <td>12:45h</td>
+                            <td class="center" colspan="5">Almoço</td>
+                        </tr>
+                            <td>14:00h</td>
+                            <td class="center">A definir</td>
+                            <td class="center">A definir</td>
+                            <td class="center">A definir</td>
+                            <td class="center">A definir</td>
+                            <td class="center">A definir</td>
+                        </tr>
+                        <tr>
+                            <td>14:50h</td>
+                            <td class="center">A definir</td>
+                            <td class="center">A definir</td>
+                            <td class="center">A definir</td>
+                            <td class="center">A definir</td>
+                            <td class="center">A definir</td>
+                        </tr>
+                        <tr>
+                            <td>15:40h</td>
+                            <td class="center" colspan="5">Coffee-Break - Lanchinhos e Networking</td>
+                        </tr>
+                        <tr>
+                            <td>16:10h</td>
+                            <td class="center">A definir</td>
+                            <td class="center">A definir</td>
+                            <td class="center">A definir</td>
+                            <td class="center">A definir</td>
+                            <td class="center">A definir</td>
+                        </tr>
+                        <tr>
+                            <td>17:00h</td>
+                            <td class="center">A definir</td>
+                            <td class="center">A definir</td>
+                            <td class="center">A definir</td>
+                            <td class="center">A definir</td>
+                            <td class="center">A definir</td>
+                        </tr>
+                        <tr class="success">
+                            <td>17:50h</td>
+                            <td class="center" colspan="5">Comunidade e GDGs<br />Encerramento/Sorteios</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <hr class="featurette-divider">
+
+
+            <div class="featurette">
+                <h2 class="featurette-heading"><span class="muted">Confira o time de</span> palestrantes</h2>
+                
+                <p class="lead muted" id="palestrante-1">Alberto Menoni - Diretor de Parcerias Online - América Latina</p>
+                <p class="lead text-warning" id="palestrante-2">Erich Egert - Instrutor e desenvolvedor pela Caelum, entusiasta do ramo de
+desenvolvimento mobile. Commiter do BusaoSP.</p>
+                <p class="lead text-error"></p>
+                <p class="lead text-info"></p>
+                <p class="lead text-success"></p>
+                        
+            </div>
+
+            
+
+            <hr class="featurette-divider">
+
+
+            <div class="row">
+
+                <div class="span8">
+
+                    <div class="featurette">
+                        <h2 class="featurette-heading">Local e outras informações</h2>
+
+                        <p class="lead">O evento ocorre na FIAP, na <a href="http://goo.gl/maps/FAe7c" target="_blank">Avenida Paulista, 1.106 - 7º andar - São Paulo/SP</a><br/>próximo do metrô Trianon-MASP.</p>
+                        <p>&nbsp;</p>
+                        <p class="lead">O espaço estará aberto a partir das 09h00. <br/>
+                            Leve <strong>documento com foto</strong> (RG ou Habilitação) para entrada.</p>
+
+
+                    </div>
+
+                </div>
+
+                <div class="span4" id="mapa">
+                </div>
+
+            </div>
+
+
+            <hr class="featurette-divider">
+
+
+            <div class="featurette">
+                <h2 class="featurette-heading">Não perca essa oportunidade!</h2>
+                <p class="lead">A inscrição custa apenas <strong>R$ 44,00</strong> (quarenta e quatro reais) e lhe garante credencial e camisa do evento.</p>
+
+                <a class="btn btn-large btn-primary" href="http://eventick.com.br/devfest-brasil" target="_blank">Faça sua inscrição</a>&nbsp;
+            </div>
+
+
+            <hr class="featurette-divider">
 
 
 
-    <!-- Le javascript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script type="text/javascript" src="//maps.google.com/maps/api/js?sensor=false"></script>
-    <script src="assets/js/jquery-1.8.2.min.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-    <script>
-      !function ($) {
-        $(function(){
-
-
-          var fiap = new google.maps.LatLng(-23.564339, -46.652770);
-          var myOptions = {
-              zoom: 17, 
-              center: fiap, 
-              mapTypeId: google.maps.MapTypeId.ROADMAP,
-              scrollwheel: false
-          };
-          map = new google.maps.Map(document.getElementById("mapa"), myOptions);
-
-          var marker = new google.maps.Marker({
-              map: map, 
-              position: fiap, 
-              title: "FIAP - Avenida Paulista, 1.106 - 7º andar"
-          });
+            <!-- /END THE FEATURETTES -->
 
 
 
+            <!-- FOOTER -->
+            <footer>
+                <p class="pull-right"><a href="#">Voltar para o topo</a></p>
 
-          //tooltips
-          $("a[rel='tooltip']").tooltip();
 
-          // carousel demo
-          //$('#myCarousel').carousel()
-        })
-      }(window.jQuery)
-    </script>
-  </body>
+                <div>
+                    <p>Este evento esta sendo organizado pelos <a href="#" rel="tooltip" data-placement="top" data-original-title="Google Developer Groups">GDGs</a>: </p>
+
+                    <ul>
+                        <li><b>Belo Horizonte:</b> 
+                            <a href="https://plus.google.com/116085534841818923812" target="_blank">Jacob van den Berg</a> e 
+                            <a href="https://plus.google.com/101950228743755129233" target="_blank">Leonardo de Barros</a></li>
+                        <li><b>Goiás:</b> 
+                            <a href="https://plus.google.com/114513456274604923484" target="_blank">Vinícius Braga</a>
+                        </li>
+                        <li><b>São Paulo:</b> 
+                            <a href="https://plus.google.com/115028528042654643072" target="_blank">Luís Leão</a>,
+                            <a href="https://plus.google.com/104268131142942797935" target="_blank">Paulo Fernandes</a> e
+                            <a href="https://plus.google.com/116353356965870702638" target="_blank">Robson Dantas</a>
+                        </li>
+                    </ul>
+
+                    <p>Conheça outros DevFests que estão acontecendo pelo mundo em <a href="http://devfest.info" target="_blank">http://devfest.info</a>.</p>
+                </div>
+            </footer>
+
+        </div><!-- /.container -->
+
+
+
+        <!-- Le javascript
+        ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script type="text/javascript" src="//maps.google.com/maps/api/js?sensor=false"></script>
+        <script src="assets/js/jquery-1.8.2.min.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script>
+                !function ($) {
+                $(function(){
+
+
+                    var fiap = new google.maps.LatLng(-23.564339, -46.652770);
+                    var myOptions = {
+                        zoom: 17, 
+                        center: fiap, 
+                        mapTypeId: google.maps.MapTypeId.ROADMAP,
+                        scrollwheel: false
+                    };
+                    map = new google.maps.Map(document.getElementById("mapa"), myOptions);
+
+                    var marker = new google.maps.Marker({
+                        map: map, 
+                        position: fiap, 
+                        title: "FIAP - Avenida Paulista, 1.106 - 7º andar"
+                    });
+
+
+
+
+                    //tooltips
+                    $("a[rel='tooltip']").tooltip();
+
+                    // carousel demo
+                    //$('#myCarousel').carousel()
+                })
+            }(window.jQuery)
+        </script>
+    </body>
 </html>
