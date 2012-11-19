@@ -297,6 +297,38 @@
                 }
             }
 
+
+
+            .center {
+                text-align: center;
+            }
+
+            #palestrantes img {
+                width: 80px;
+                /*
+                -webkit-border-radius: 25px;
+                -moz-border-radius: 25px;
+                border-radius: 25px;
+                */
+
+            }
+
+            .areas img {
+                width: 200px;
+            }
+            .programacao thead td {
+                font-weight: bold;
+            }
+            .programacao table td {
+                text-align: center;
+                vertical-align: middle;
+            }
+
+            .inverte {
+                background: rgb(0, 68, 122);
+                color: #fff;
+            }
+
         </style>
 
         <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
@@ -337,66 +369,240 @@
                         </div>
                     </div>
                 </div>
-
-
             </div>
 
         </div><!-- /.carousel -->
 
+        <div class="container programacao">
 
 
-        <div class="container marketing">
 
-
-            <div class="featurette">
-                <h2 class="featurette-heading"><span class="muted">Um evento feito</span> pela comunidade!</h2>
-                <p class="lead">Você tem até <strong>15 de novembro</strong> para propor sua oficina, palestra ou codelab em um dos 5 temas abaixo.</p>
-
-                <h3>O <strong>call 4 papers</strong> está encerrado. Em breve publicaremos a grade completa.</h3>
+            <div class="row areas">
+                <div class="span12 center">
+                    <img src="assets/img/android.png" alt="" rel="popover" data-original-title="ANDROID" data-content="Saiba sobre as novidades da plataforma e quais as boas práticas no desenvolvimento de interfaces." />
+                    <img src="assets/img/api.png" alt="" rel="popover" data-original-title="APIs"  data-content="Tudo que você queria saber sobre Youtube, Maps, Google+ e não tinha para quem perguntar." />
+                    <img src="assets/img/chrome.png" alt="" rel="popover" data-original-title="HTML5/Chrome"  data-content="Interatividade, design e inovação utilizando o browser mais rápido do mercado." />
+                    <img src="assets/img/cloud.png" alt="" rel="popover" data-original-title="CLOUD"  data-content="Entenda como tirar proveito dos dados na nuvem e como fugir de tempestades :P" />
+                    <img src="assets/img/startup.png" alt="" rel="popover" data-original-title="STARTUPS"  data-content="Empreendedores, curiosos e muita gente envolvida no cenário de startups no Brasil estarão presentes." />
+                </div>
             </div>
 
 
-            <hr class="featurette-divider">
+            <div class="featurette">
+                <h2 class="featurette-heading"><span class="muted">Confira nossa </span> programação</h2>
+                <p class="lead">&nbsp;</p>
+
+                <ul class="nav nav-tabs" id="tabProgramacao">
+                  <li class="active"><a href="#programacao">Programação</a></li>
+                  <!--
+                  <li><a href="#palestrantes">Palestrantes</a></li>
+                  -->
+                </ul>
+                 
+                <div class="tab-content">
+                  <div class="tab-pane active" id="programacao">
+
+
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <td style="width: 7%;">Horário</td>
+                                <td>Auditório</td>
+                                <td>Sala 1</td>
+                                <td>Sala 2</td>
+                                <td>Sala 3</td>
+                                <td>Sala 4</td>
+                                <td>Sala 5</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="inverte">
+                                <td>09:00</td>
+                                <td colspan="6">CREDENCIAMENTO/COFFEE BREAK</td>
+                                
+                            </tr>
+                            <tr>
+                                <td>10:00</td>
+                                <td colspan="6">ABERTURA - GDGs</td>
+                            </tr>
+                            <tr>
+                                <td>10:15</td>
+                                <td rowspan="2"> <small>Neto Marin - Google</small> <span class="label label-success">Android</span></td>
+                                <td rowspan="2"> <small>Neto Marin - Google</small> (retransmissão) <span class="label label-success">Android</span></td>
+                                <td rowspan="2">7 Masters <span class="label label-warning">HTML5/Chrome</span></td>
+                                <td rowspan="4">Android: Estrutura de Atualização Automática - <small>Douglas Alípio Mesquita</small> <span class="label label-inverse">codelab</span></td>
+                                <td rowspan="2">Jogando RPG no Hangouts - <small>Frederico Beneti</small> <span class="label label-important">APIs</span></td>
+                                <td rowspan="2">Open Inovation <small>FIAP</small> <span class="label">Startups</span></td>
+                            </tr>
+                            <tr>
+                                <td>10:40</td>
+                            </tr>
+                            <tr>
+                                <td>11:05</td>
+                                <td rowspan="2">Novidades de HTML5 - <small>Renato Mangini</small> <span class="label label-warning">HTML5/Chrome</span></td>
+                                <td rowspan="2">On size fits all - Apps mobile nativos com HTML5 - <small>Claudio Meinberg</small> <span class="label label-success">Android</span></td>
+                                <td rowspan="2">Novidades de HTML5 (retransmissão) - <small>Renato Mangini </small><span class="label label-warning">HTML5/Chrome</span></td>
+                                <td rowspan="4">Codelab de Maps API <span class="label label-important">APIs</span> <span class="label label-inverse">codelab</span></td>
+                                <td rowspan="2">Startups e Universidades <small>Wagner Marcelo (PUC-SP/Startup Evolution)</small> <span class="label">Startups</span></td>
+                            </tr>
+                            <tr>
+                                <td>11:30</td>
+                            </tr>
+                            <tr>
+                                <td>11:55</td>
+                                <td rowspan="2">Monetização de Aplicativos com as soluções Google - <small>Alberto Menoni</small> <span class="label">Startups</span></td>
+                                <td rowspan="2">Esquartejando sua Activity com Fragments - <small>Suelen Goularte Carvalho</small> <span class="label label-success">Android</span></td>
+                                <td rowspan="2"><small>Daniel Filho - IG</small> <span class="label label-warning">HTML5/Chrome</span></td>
+                                <td rowspan="2">Internet das Coisas com Android + Arduino + ADK e um monte de outras coisas! - <small>Vinicius Senger (Globalcode)</small> <span class="label label-success">Android</span></td>
+                                <td rowspan="2">Monetização de Aplicativos com as soluções Google (retransmissão) - <small>Alberto Menoni</small> <span class="label">Startups</span></td>
+                            </tr>
+                            <tr>
+                                <td>12:20</td>
+                            </tr>
+                            <tr class="inverte">
+                                <td>12:45</td>
+                                <td colspan="6">ALMOÇO</td>
+                            </tr>
+                            <tr>
+                                <td>14:00</td>
+                                <td rowspan="2">GDG-BH <small>Leonardo Barros - GDG-BH</small> <span class="label label-info">Cloud</span></td>
+                                <td rowspan="2">Integrando Android Apps com Evernote API - <small>Marcos Paulo Damasceno</small> <span class="label label-success">Android</span></td>
+                                <td rowspan="2">Realidade Aumentada com HTML5 - <small>Zeno Rocha</small> <span class="label label-warning">HTML5/Chrome</span></td>
+                                <td rowspan="2">GDG-BH (retransmissão) <small>Leonardo Barros - GDG-BH</small> <span class="label label-info">Cloud</span></td>
+                                <td></td>
+                                <td rowspan="2">Porque teu novo produto vai fracassar? - <small>Juan Esteban Bernabó</small> <span class="label">Startups</span></td>
+                            </tr>
+                            <tr>
+                                <td>14:25</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>14:50</td>
+                                <td rowspan="2"></td>
+                                <td>Como vender multiplas vezes a mesma App? <small>Erich Egert - Caelum</small> <span class="label label-success">Android</span></td>
+                                <td rowspan="2">Uma tonelada de truques de Web mobile - <small>Sergio Lopes - Caelum</small> <span class="label label-warning">HTML5/Chrome</span></td>
+                                <td rowspan="2"> <small>Neto Marin e Rafael Nunes</small> <span class="label label-info">Cloud</span></td>
+                                <td></td>
+                                <td rowspan="2">Eu errei, mais de uma vez... mas estou aprendendo - <small>Paulo Fernandes</small> <span class="label">Startups</span></td>
+                            </tr>
+                            <tr>
+                                <td>15:15</td>
+                                <td>Descomplicando ORM no Android com ORMan Framework - <small>Ubiratan Soares</small> <span class="label label-success">Android</span></td>
+                                <td></td>
+                            </tr>
+                            <tr class="inverte">
+                                <td>15:40</td>
+                                <td colspan="6">COFFEE BREAK - NETWORKING</td>
+                            </tr>
+                            <tr>
+                                <td>16:10</td>
+                                <td colspan="6" rowspan="4">Codelab Youtube API - <small>Jeremy Walker - Google</small> <span class="label label-important">APIs</span> <span class="label label-inverse">codelab</span></td>
+                            </tr>
+                            <tr>
+                                <td>16:35</td>
+                            </tr>
+                            <tr>
+                                <td>17:00</td>
+                            </tr>
+                            <tr>
+                                <td>17:25</td>
+                            </tr>
+                            <tr>
+                                <td>17:50</td>
+                                <td colspan="6">ENCERRAMENTO E SORTEIOS (auditório)</td>
+                            </tr>
+                            <tr class="inverte">
+                                <td>18:40</td>
+                                <td colspan="6">até 2013!</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                    <small><strong>Programação sujeita a alteração.</strong> </small><br/>
+                    <small>Atenção: a capacidade média de cada sala é de 30 pessoas. No auditório a capacidade é de 80 pessoas.</small>
+
+
+
+
+
+
+                  </div>
+                  <div class="tab-pane" id="palestrantes">
+                      
+
+                <p class="lead">Em breve a lista completa dos palestrantes</p>
+
+
+<!--
+                    <div id="palestrantes" class="container" style="text-align: center;">
+
+                        <img src="assets/img/palestrantes/alberto-menoni.jpg" alt="">
+                        <img src="assets/img/palestrantes/daniel_filho.jpg" alt="">
+                        <img src="assets/img/palestrantes/erich-egert.jpg" alt="">
+                        <img src="assets/img/palestrantes/jeremy-walker.jpg" alt="">
+                        <img src="assets/img/palestrantes/neto-marin.jpg" alt="">
+                        <img src="assets/img/palestrantes/renato-mangini.jpg" alt="">
+                        <img src="assets/img/palestrantes/vinicius-senger.jpg" alt="">
+                        <img src="assets/img/palestrantes/wagner-marcelo.jpg" alt="">
+                        <img src="assets/img/palestrantes/zeno-rocha.jpg" alt="">
+
+                    </div>
+
+-->
+
+
+                  </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="container">
+
+            <!--
 
 
             <div class="row">
 
-                <div class="span4">
+                <div class="span4 center">
                     <img src="assets/img/android.png" alt="" />
                     <h2>Android</h2>
                     <p>Saiba sobre as novidades da plataforma e quais as boas práticas no desenvolvimento de interfaces.</p>
                 </div>
 
-                <div class="span4">
+                <div class="span4 center">
                     <img src="assets/img/api.png" alt="" />
                     <h2>APIs</h2>
                     <p>Tudo que você queria saber sobre Youtube, Maps, Google+ e não tinha para quem perguntar.</p>
                 </div>
 
-                <div class="span4">
+                <div class="span4 center">
                     <img src="assets/img/chrome.png" alt="" />
                     <h2>Chrome &amp; HTML5</h2>
-                    <p>Interatividade, design e inovação utilizando o browser mais rápido do mercado</p>
+                    <p>Interatividade, design e inovação utilizando o browser mais rápido do mercado.</p>
                 </div>
 
 
-            </div><!-- /.row -->
+            </div>
 
             <br/>
             <div class="row" style="margin-top: 80px;">
-                <div class="span4 offset2">
+                <div class="span4 offset2 center">
                     <img src="assets/img/cloud.png" alt="" />
                     <h2>Cloud</h2>
                     <p>Entenda como tirar proveito dos dados na nuvem e como fugir de tempestades :P</p>
                 </div>
 
-                <div class="span4">
+                <div class="span4 center">
                     <img src="assets/img/startup.png" alt="" />
                     <h2>Startups</h2>
                     <p>Empreendedores, curiosos e muita gente envolvida no cenário de startups no Brasil estarão presentes.</p>
                 </div>
 
-            </div><!-- /.row -->
+            </div>
+
+        -->
 
 
             <!--
@@ -446,11 +652,65 @@
             </div>
 
 
-            <hr class="featurette-divider">
+            <hr class="featurette-divider" style="margin-bottom: 30px;">
 
 
 
             <!-- /END THE FEATURETTES -->
+
+            <div class="row">
+                <div class="span12" style="margin-bottom: 100px;">
+
+                    <h4>Patrocinadores Diamond</h4>
+
+                    <div class="row" style="padding-top: 50px; padding-bottom: 50px;">
+                        <div class="span4 center">
+                            <img src="assets/img/patrocinadores/google.png" alt="" />
+                        </div>
+
+                        <div class="span4 center">
+                            <h3><a href="http://oninteractive.com.br/" target="_blank">On Interactive</a></h3>
+                        </div>
+                    
+                    </div>
+    
+
+                    <div class="row">
+                        
+                        <div class="span4" style="padding-top: 50px; padding-bottom: 50px;">
+
+                            <h4>Patrocinador Gold</h4>
+
+                            <a href="http://www.caelum.com.br/" target="_blank">
+                                <img src="assets/img/patrocinadores/caelum.png" alt="" width="180" style="margin: 30px;" />
+                            </a>
+
+                        </div>
+                        <div class="span4" style="padding-top: 50px; padding-bottom: 50px;">
+
+                            <h4>Patrocinador Silver</h4>
+                            <a href="http://www.mestreseo.com.br/" target="_blank">
+                                <img src="assets/img/patrocinadores/mestreseo.png" alt="" width="130" style="margin: 35px;" />
+                            </a>
+                            
+                        </div>
+
+
+                    </div>
+
+
+
+                    <h4>Apoio</h4>
+
+                    FIAP | iMasters
+
+                    
+                </div>
+
+
+
+
+            </div>
 
 
 
@@ -495,6 +755,25 @@
                 !function ($) {
                 $(function(){
 
+                    $("img[rel='popover']").popover({
+                        placement: "top",
+                        trigger: "hover"
+                    });
+
+                    //tooltips
+                    $("a[rel='tooltip']").tooltip();
+
+                    // carousel demo
+                    //$('#myCarousel').carousel()
+
+                    $('#tabProgramacao a:first').tab('show');
+
+                    $('#tabProgramacao a').click(function (e) {
+                      e.preventDefault();
+                      $(this).tab('show');
+                    })
+
+
 
                     var fiap = new google.maps.LatLng(-23.564339, -46.652770);
                     var myOptions = {
@@ -514,11 +793,6 @@
 
 
 
-                    //tooltips
-                    $("a[rel='tooltip']").tooltip();
-
-                    // carousel demo
-                    //$('#myCarousel').carousel()
                 })
             }(window.jQuery)
         </script>
