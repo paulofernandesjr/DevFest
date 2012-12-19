@@ -22,8 +22,8 @@ handlers:
   upload: index\.html
 
 - url: /
-  static_files: index.html
-  upload: index\.html
+  static_files: index_novo.html
+  upload: index_novo\.html
 
 libraries:
 - name: webapp2
